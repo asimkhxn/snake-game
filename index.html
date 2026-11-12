@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <h1>🐍 NEON SNAKE</h1>
+            <p>Eat. Grow. Survive.</p>
+        </header>
+
+        <div class="score-board">
+            <div class="score-box">
+                <span>SCORE</span>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="score-box">
+                <span>HIGH SCORE</span>
+                <h2 id="highScore">0</h2>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+            <div id="gameMessage" class="game-message">
+                <h2 id="messageTitle">READY?</h2>
+                <p id="messageText">Press Start to play!</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">START GAME</button>
+            <button id="pauseBtn">PAUSE</button>
+        </div>
+
+        <p class="instructions">
+            Use Arrow Keys or WASD to move
+        </p>
+
+        <div class="mobile-controls">
+            <button data-direction="UP">▲</button>
+            <div class="middle-controls">
+                <button data-direction="LEFT">◀</button>
+                <button data-direction="DOWN">▼</button>
+                <button data-direction="RIGHT">▶</button>
+            </div>
+        </div>
+
+        <footer>
+            Designed with HTML, CSS & JavaScript
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
